@@ -45,7 +45,11 @@ background-color: limegreen;
   border-right: 1px solid #171B26;
 }
 .play-board{
-  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: #212837;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr); 
 }
 @media screen and (max-width: 400px) {
   .wrapper {
@@ -62,8 +66,5 @@ background-color: limegreen;
   .controls i {
     padding: 15px 0;
     font-size: 1rem;
-  }
-  .play-board{
-    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
   }
 }
